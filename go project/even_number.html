@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+<head>
+<title>
+    Even Numbber Finder
+</title>
+
+</head>
+
+<body>
+<h1>Enter a number:</h1>
+<input type="text" id="num">
+<br>
+<button type="button" onclick="myFunction()">Display Even Numbers</button>
+<br>
+<p id="line"></p>
+
+<script>
+    function myFunction(){
+    
+        const myList = [];
+        var x = document.getElementById("num").value;
+        for (let i=0; i<=x;i+=2){
+            myList.push(i)  
+        }
+
+        document.getElementById("line").innerHTML ="Even numbers between 0 and " + x + " are: "+ myList;
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+.grid_container{
+    border: 5px solid black;
+    display: inline-grid;
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);   
+
+}
+
+h3 {
+    color:orangered;
+    font-weight: 200;
+}
+
+h1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+}
+
+ul li{
+    font-style: italic;
+    font-size: larger;
+}
+
+#history{
+    font-weight: 800;
+}
+
+#email{
+    border-bottom: 2px;
+}
+
+
+
+.howtoimg{
+    cursor: crosshair;
+    flex-shrink: 1;
+}
+
+.instructions{
+    font-size: larger;
+}
+
+.arrowclass1{
+    height: 7%;
+    width: 7%;
+    padding-bottom: 5%;
+}
+
+.arrowclass2{
+    height: 7%;
+    width: 7%;
+    padding-bottom: 8%;
+}
+
+#htpdiv{
+    display: flexbox;
+    flex: auto;
+    margin: 5%;
+    padding: 1cm;
+    border-style: groove;
+    border: 10cm;
+    background-color: blue; 
+    color:yellow;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.capimg{
+    flex: 1 1 auto;
+}
+
+.arrowclass{
+    flex: 1 1 auto;
+}
+
+#cap1{
+    display: flexbox;
+    flex-direction: column;
+    flex:1 1 auto;
+}
+
+#cap2{
+    display: flexbox;
+    flex-direction: column;
+    flex:1 1 auto;
+}
+
+.grid_container{
+    border: 5px solid black;
+    display: inline-grid;
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);   
+
+}
+
+#welcome {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+
+#navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:auto;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.nav-div{
+    flex: 1 1 auto;
+    font-size: 24px;
+}
+
+.nav-title{
+    color: green;
+    font-size: 34px;    
+}
+
+
+.nav{
+    font-style:normal ;
+}
+
+#history_div{
+    margin: 5%;
+    padding: 1cm;
+    border-style: groove;
+    background-image: url("gopainting.jpeg");
+    background-size:100%;
+    color:magenta;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-weight:bold;
+
+}
+
+#wheretoplay{
+    margin: 5%;
+    padding: 1cm;
+    border-style: groove;
+    background-color: blanchedalmond;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    color:black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+@media only screen and (max-width: 1799px){
+
+    .arrowclass1{
+        transform: rotate(90deg);
+    }
+
+    .arrowclass2{
+        transform: rotate(90deg);
+    }
+}
+
+
+/* mobile above this line */
+
+
+/* desktop below this line */
+@media only screen and (min-width: 1800px) {
+
+.grid_container{
+    border: 5px solid black;
+    display: inline-grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);   
+
+}
+
+
+h1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+}
+
+
+#htpdiv{
+    display: flexbox;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+#welcome {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+#navbar{
+    display: flex;
+    flex-wrap: wrap;
+    width:auto;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.nav-div{
+    flex: 1 1 auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+
+#history_div{
+    margin: 5%;
+    padding: 1cm;
+    border-style: groove;
+    background-image: url("gopainting.jpeg");
+    background-size:100%;
+    color:magenta;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7 ;
+    font-weight:bold;
+
+}
+
+#wheretoplay{
+    margin: 5%;
+    padding: 1cm;
+    border-style: groove;
+    background-color: blanchedalmond;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+
+footer{
+    display:flex;
+    justify-content: center;
+    color:black;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    
+}
+
+#cap1{
+    display: flex;
+    flex-direction: row;
+}
+
+#cap2{
+    display: flex;
+    flex-direction: row;
+}
+
+.capimg{
+    flex: 2 1 auto;
+}
+
+.arrowclass{
+    flex: 1 2 80px;
+}
+
+
+}
